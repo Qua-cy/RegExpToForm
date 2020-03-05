@@ -318,6 +318,7 @@
         position: absolute;
         bottom: 130px;
         left: 470px;
+        outline: none;
     }
     
     .wrap .btn:hover {
