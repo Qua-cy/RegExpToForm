@@ -1,0 +1,351 @@
+    /* 全局样式 */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "微软雅黑";
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    i,
+    em {
+        font-style: normal;
+    }
+    
+    a:hover {
+        color: rgb(251, 116, 3);
+    }
+    /* 头部样式 */
+    
+    .head {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(223, 221, 221);
+        border-bottom: 2px solid rgb(93, 150, 236);
+    }
+    
+    .head-wrap {
+        width: 1200px;
+        min-width: 1200px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+    }
+    /* 头部左侧logo */
+    
+    .head-logo {
+        width: 450px;
+        height: 100px;
+        float: left;
+        position: relative;
+    }
+    
+    .head-logo img {
+        position: absolute;
+        width: 90px;
+        height: 70px;
+        top: 13px;
+    }
+    
+    .head-logo .logo-item {
+        position: absolute;
+        font-size: 24px;
+        top: 35px;
+        left: 100px;
+    }
+    
+    .head-logo i {
+        font-size: 24px;
+        position: absolute;
+        top: 35px;
+        left: 343px;
+    }
+    
+    .head-logo span {
+        position: absolute;
+        top: 41px;
+        left: 352px;
+        color: #333;
+    }
+    /* 头部右侧栏 */
+    
+    .head-right {
+        width: 630px;
+        height: 100px;
+        float: right;
+        line-height: 100px;
+    }
+    
+    .right-item {
+        margin-left: 20px;
+    }
+    
+    .email span,
+    .right-item .logn {
+        color: rgb(251, 116, 3);
+    }
+    
+    .imooclist {
+        padding-bottom: 10px;
+    }
+    
+    .imooclist::after {
+        display: inline-block;
+        content: '';
+        border: 8px solid transparent;
+        border-top-color: #333;
+        position: relative;
+        bottom: -7px;
+    }
+    
+    .head-right .phone {
+        margin-left: 40px;
+    }
+    
+    .head-right .phone img {
+        width: 16px;
+        height: 23px;
+        position: relative;
+        bottom: -8px;
+    }
+    /* 我的IMooc列表 */
+    
+    .imooclist-item {
+        position: absolute;
+        width: 170px;
+        height: 370px;
+        background: rgb(248, 250, 249);
+        border: 1px solid rgb(251, 116, 3);
+        top: 70px;
+        right: 76px;
+        display: none;
+        z-index: 3;
+    }
+    
+    .imooclist-item table {
+        width: 100%;
+        padding: 10px 20px 0 20px;
+        line-height: 30px;
+        font-size: 13px;
+    }
+    
+    .imooclist-item table a {
+        color: #888;
+    }
+    
+    .imooclist-item table a:hover {
+        color: rgb(251, 116, 3);
+    }
+    
+    tr:nth-child(2) td,
+    tr:nth-child(3) td,
+    tr:nth-child(5) td,
+    tr:nth-child(6) td,
+    tr:nth-child(8) td,
+    tr:nth-child(9) td {
+        border-bottom: 1px dotted #999;
+    }
+    /* 页面主体样式 */
+    
+    .wrap {
+        width: 1200px;
+        min-width: 1200px;
+        height: 750px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .wrap h3 {
+        font-size: 16px;
+        font-weight: normal;
+        padding: 10px 0 10px 0;
+    }
+    
+    .wrap h3 span {
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .wrap .acountinfo {
+        width: 100%;
+        height: 650px;
+        border: 1px solid rgb(251, 116, 3);
+        border-radius: 8px;
+    }
+    
+    .wrap .acountinfo .acount-title {
+        width: 100%;
+        height: 40px;
+        background-color: rgb(251, 116, 3);
+        border-radius: 5px;
+        color: #fff;
+        text-indent: 20px;
+        line-height: 40px;
+    }
+    
+    .wrap .acountinfo p {
+        height: 42px;
+        line-height: 42px;
+        text-align: right;
+    }
+    
+    .wrap .acountinfo p i {
+        color: red;
+        vertical-align: middle;
+    }
+    
+    .wrap .acountinfo p span {
+        display: inline-block;
+        width: 500px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+        vertical-align: middle;
+        text-align: left;
+        text-indent: 10px;
+        color: rgb(251, 116, 3);
+    }
+    
+    .wrap .acountinfo p span .pw_wrongtip {
+        display: none;
+        color: red;
+    }
+    
+    .wrap .acountinfo p span .tips {
+        width: 180px;
+        height: 5px;
+    }
+    
+    .wrap .acountinfo p span .tips .s {
+        width: 50px;
+        height: 5px;
+        text-indent: 0px;
+        margin-left: 5px;
+        float: left;
+        background-color: rgb(204, 203, 199);
+    }
+    
+    .wrap .acountinfo p span .tips .s1 {
+        background-color: red;
+    }
+    
+    .wrap .acountinfo p span .tips .s2 {
+        background-color: orange;
+    }
+    
+    .wrap .acountinfo p span .tips .s3 {
+        background-color: green;
+    }
+    
+    .wrap .acountinfo p span .name_wrongtip {
+        display: none;
+        color: red;
+    }
+    
+    .wrap .acountinfo p span .name_righttip {
+        display: none;
+        color: green;
+    }
+    
+    .wrap .acountinfo p span .namerule {
+        display: block;
+        width: 100px;
+    }
+    
+    .wrap .explain {
+        position: absolute;
+        bottom: 231px;
+        right: 4px;
+        width: 400px;
+        height: 250px;
+        border: 1px solid rgb(17, 109, 248);
+        background-color: #fffffd;
+        display: none;
+    }
+    
+    .wrap .explain p {
+        padding: 10px 10px 0 20px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    
+    .wrap .acountinfo p .namerule {
+        text-decoration: underline;
+        color: rgb(251, 116, 3);
+    }
+    
+    .wrap .acountinfo p:nth-of-type(8) span {
+        color: rgb(251, 116, 3);
+    }
+    
+    .wrap .acountinfo p:nth-of-type(1) {
+        margin-top: 30px;
+    }
+    
+    .wrap .acountinfo p input {
+        height: 20px;
+        width: 250px;
+    }
+    
+    .wrap .acountinfo p select {
+        width: 250px;
+        height: 25px;
+    }
+    
+    .wrap .check {
+        width: 500px;
+        position: absolute;
+        bottom: 230px;
+        left: 444px;
+    }
+    
+    .wrap .check a {
+        color: rgb(38, 110, 243);
+    }
+    
+    .wrap .btn {
+        width: 200px;
+        height: 45px;
+        background-color: rgb(251, 116, 3);
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 130px;
+        left: 470px;
+    }
+    
+    .wrap .btn:hover {
+        cursor: pointer;
+        background-color: rgb(189, 88, 5);
+    }
+    /* 页脚样式 */
+    
+    .footer {
+        width: 100%;
+        height: 100px;
+        border-top: 2px solid rgb(36, 135, 201);
+        background-color: rgb(223, 221, 221);
+    }
+    
+    .footer .about_us {
+        width: 1200px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    .footer .copyright {
+        width: 1200px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        margin: 0 auto;
+    }

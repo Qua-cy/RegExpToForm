@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正则表单验证</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="head">
+        <div class="head-wrap">
+            <!-- 左侧logo -->
+            <div class="head-logo">
+                <a href="javascript:; "><img src="img/gaotie.png" alt="logo" "></a>
+                <a href="javascript:; " class="logo-item">高铁客户服务中心</a>
+                <i>|</i>
+                <span>客户服务</span>
+            </div>
+            <!-- 右侧栏 -->
+            <div class="head-right">
+                <a href="" class="right-item email">意见反馈&nbsp;<span>train@com</span></a>
+                <span class="right-item">您好，请&nbsp;<a href="" class="logn">登录&nbsp;</a>|&nbsp;<a href="">注册</a></span>
+                <a href="" class="right-item imooclist">我的账户&nbsp;&nbsp;</a>
+                <a href="" class="right-item phone"><img src="img/phone.png" alt="手机版" ">&nbsp;手机版</a>
+            </div>
+            <div class="imooclist-item">
+                <table>
+                    <tr>
+                        <td><a href="">未完成订单</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">已完成订单（退/改）</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">我的保险</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">查看个人信息</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">账户安全</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">常用联系人</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">重点旅客预约</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">遗失物品查找</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">服务查询</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">投诉</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">建议</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- 注册信息区 -->
+    <div class="wrap ">
+        <h3>您现在的位置：<span>客运首页>注册</span></h3>
+        <div class="acountinfo">
+            <div class="acount-title">账户信息</div>
+
+            <p><i>*</i>&nbsp;用&nbsp;&nbsp;户&nbsp;&nbsp;名：&nbsp;&nbsp;&nbsp;<input type="text" class="username" placeholder="用户名设置成功后不可以修改"><span class="checkresult">6-30为字母、数字或“_”，字母开头</span></p>
+            <p><i>*</i>&nbsp;登录密码：&nbsp;&nbsp;&nbsp;<input type="password" class="password" placeholder="6-20位字母、数字或符号"><span class="checkresult">
+                <span class="pw_wrongtip">请输入6-20位字母、数字或符号</span>
+                <span class="tips">
+                <span class="s"></span>
+                <span class="s"></span>
+                <span class="s"></span>
+                </span>
+                </span>
+            </p>
+            <p><i>*</i>&nbsp;确认密码：&nbsp;&nbsp;&nbsp;<input type="password" class="password_" placeholder="再次输入您的登录密码"><span class="checkresult"></span></p>
+            <p><i>*</i>&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：&nbsp;&nbsp;&nbsp;<input type="text" class="fullname" placeholder="请输入姓名"><span class="checkresult"><em class="namerule">姓名填写规则</em><em class="name_wrongtip">姓名只能包含中文或者英文,且字符在3-30个之间</em>
+                <em
+                    class="name_righttip">姓名输入正确</em>
+            </p>
+
+            <p>
+                <i>*</i>&nbsp;证件类型：&nbsp;&nbsp;
+                <select name="idcardtype" class="idcardtype">
+                            <option value="idcard">二代身份证</option>
+                            <option value="permit1">港澳通行证</option>
+                            <option value="permit2">台湾通行证</option>
+                            <option value="passport"">护照</option>
+                        </select>
+                <span class="checkresult"></span>
+            </p>
+            <p><i>*</i>&nbsp;证件号码：&nbsp;&nbsp;&nbsp;<input type="text" class="idcard_num" placeholder="请输入您的证件号码"><span class="checkresult"></span></p>
+            <p>&nbsp;&nbsp;邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：&nbsp;&nbsp;&nbsp;<input type="email" class="per_email" placeholder="请正确填写邮箱地址"><span class="checkresult"></span></p>
+            <p><i>*</i>&nbsp;手机号码：&nbsp;&nbsp;&nbsp;<input type="text" class="phonenum" placeholder="请输入您的手机号码"><span class="checkresult">请正确填写手机号码，稍后将向该手机号码发送短信验证码</span></p>
+            <p>
+                <i>*</i>&nbsp;旅客类型：&nbsp;&nbsp;
+                <select name="usertype" id="usertype">
+                        <option value="adult">成人</option>
+                        <option value="child">儿童</option>
+                        <option value="student">学生</option>
+                        <option value="disabled">残疾军人</option>
+                        <option value="police">伤残人民警察</option>
+                    </select>
+                <span class="checkresult"></span>
+            </p>
+        </div>
+        <p class="check"><input type="checkbox" class="checkbox">我已阅读并同意遵守<a href="https://help.12306.cn/cms/answer/h5/001531826591279813373440b580b2e0" target="blank">《中国铁路客户服务中心网站服务条款》</a></p>
+        <button class="btn">下一步</button>
+        <div class="explain">
+            <p>
+                1.确认姓名中生僻字无法输入时，可用生僻字拼音或同音字替代。</br>
+                2.输入姓名保存后，遇有系统无法正确显示的汉字，可用该汉字的拼音或同音字重新修改后保存。</br> 3.姓名中有繁体字无法输入时，可用简体替代。 </br>
+                4.姓名较长，汉字与英文字符合计超过30个（1个汉字算2个字符）的，需按姓名中第一个汉字或英文字符开始按顺序连续输入30个字符（空格字符不输入），其中英文字符输入时不区别大小写。
+            </p>
+        </div>
+    </div>
+    <!-- 页脚区 -->
+    <footer class="footer ">
+        <div class="about_us">
+            <p>
+                <a href="javascript:void(0);">关于我们&nbsp;</a>|
+                <a href="javascript:void(0);">网站声明</a>
+            </p>
+        </div>
+        <p class="copyright">Copyright &copy; 2015 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+    </footer>
+
+
+    <!-- js部分 -->
+    <script type="text/javascript" src="js/check.js"></script>
+</body>
+
+</html>
